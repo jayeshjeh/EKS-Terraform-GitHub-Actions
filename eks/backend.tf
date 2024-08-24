@@ -6,13 +6,13 @@ terraform {
       version = "~> 5.49.0"
     }
   }
-  #backend "s3" {
-  #  bucket         = "my-jeh-bucket1"
-  #  region         = "us-east-1"
-   # key            = "eks/terraform.tfstate"
-  #  dynamodb_table = "proj"
-  #  encrypt        = true
-  #}
+  backend "s3" {
+    bucket         = "my-jeh-bucket1"
+    region         = "us-east-1"
+    key            = "eks/terraform.tfstate"
+    dynamodb_table = "proj"
+    encrypt        = true
+  }
 }
 
 provider "aws" {
