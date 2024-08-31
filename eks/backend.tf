@@ -10,7 +10,7 @@ terraform {
     bucket         = "my-jeh-bucket1"
     region         = "us-east-1"
     key            = "eks/terraform.tfstate"
-    dynamodb_table = "dynamodb-state-lo"
+    dynamodb_table = "proj-table"
     encrypt        = true
   }
 }
